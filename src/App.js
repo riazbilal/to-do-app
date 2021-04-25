@@ -11,37 +11,37 @@ class App extends Component
     todos:
     [
       {
-        id: 1, 
+        id: uuid(), 
         title: "Take out trash",
         completed: false
       },
       {
-        id: 2,
+        id: uuid(),
         title: "Clean room",
         completed: false 
       },
       {
-        id: 3,
+        id: uuid(),
         title: "Wash dishes",
         completed: false
       },
       {
-        id: 4, 
+        id: uuid(), 
         title: "Learn React",
         completed: false
       },
       {
-        id: 5, 
+        id: uuid(), 
         title: "Workout",
         completed: false
       },
       {
-        id: 6, 
+        id: uuid(), 
         title: "Mark task as complete",
         completed: false
       },
       {
-        id: 7, 
+        id: uuid(), 
         title: "Delete Task",
         completed: false
       },
@@ -66,7 +66,7 @@ class App extends Component
   //Add toDo --> adds task to list
   addTodo = (title) => {
     const newTodo = {
-      id: uuid.v4,
+      id: uuid(),
       title: title,
       completed: false 
     }
